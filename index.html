@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artista Creativo | Música y Presentaciones</title>
+    <meta name="description"
+        content="Descubre la trayectoria, el talento y las próximas presentaciones de este artista creativo.">
+    <meta name="keywords" content="artista, música, conciertos, trayectoria, presentaciones">
+    <meta name="author" content="Nombre del Artista">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background: #111827;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(17, 24, 39, .95);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #fbbf24;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus {
+            color: #fbbf24;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6rem 2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1f2937, #111827, #4f46e5);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #fbbf24;
+            color: #111827;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+
+        .about {
+            background: #1f2937;
+        }
+
+        .career {
+            background: #0f172a;
+        }
+
+        .events {
+            background: #1e293b;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #fbbf24;
+        }
+
+        p {
+            line-height: 1.8;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, .08);
+            padding: 2rem;
+            border-radius: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #111827;
+        }
+
+        @media(max-width:768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+    <script
+        type="application/ld+json"> { "@context":"https://schema.org", "@type":"Person", "name":"Nombre del Artista", "jobTitle":"Artista", "description":"Artista dedicado a compartir su talento a través de presentaciones y proyectos creativos.", "url":"https://www.tusitio.com" } </script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <div class="logo">ARTISTA</div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#trayectoria">Trayectoria</a></li>
+                <li><a href="#presentaciones">Próximas presentaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <div class="container">
+                <h1 id="titulo-principal"> Bienvenido a mi universo artístico </h1>
+                <p> Música, creatividad y pasión reunidas en un mismo lugar. Descubre mi historia, mi recorrido y las
+                    próximas experiencias que compartiré con el público. </p> <a href="#sobre-mi" class="btn"> Conocer
+                    más </a>
+            </div>
+        </section>
+        <section id="sobre-mi" class="about" aria-labelledby="titulo-sobre-mi">
+            <div class="container">
+                <h2 id="titulo-sobre-mi">Sobre mí</h2>
+                <p> Soy un artista apasionado por crear experiencias memorables a través de mi trabajo. Mi objetivo es
+                    conectar con las personas mediante la expresión artística y transmitir emociones auténticas. </p>
+            </div>
+        </section>
+        <section id="trayectoria" class="career" aria-labelledby="titulo-trayectoria">
+            <div class="container">
+                <h2 id="titulo-trayectoria">Trayectoria</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Inicio</h3>
+                        <p> Primeros pasos desarrollando mi estilo y participando en eventos locales. </p>
+                    </article>
+                    <article class="card">
+                        <h3>Crecimiento</h3>
+                        <p> Colaboraciones con otros artistas y expansión de mi presencia en escenarios importantes.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Actualidad</h3>
+                        <p> Nuevos proyectos, lanzamientos y experiencias para seguir creciendo junto a mi audiencia.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="presentaciones" class="events" aria-labelledby="titulo-eventos">
+            <div class="container">
+                <h2 id="titulo-eventos">Próximas presentaciones</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>15 Agosto 2026</h3>
+                        <p>Festival de Arte y Cultura.</p>
+                    </article>
+                    <article class="card">
+                        <h3>2 Septiembre 2026</h3>
+                        <p>Concierto acústico en vivo.</p>
+                    </article>
+                    <article class="card">
+                        <h3>20 Octubre 2026</h3>
+                        <p>Presentación especial de nuevo proyecto.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Nombre del Artista. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
